@@ -1,0 +1,88 @@
+header {
+    position: relative;
+    z-index: 2;
+    height: 133px;
+}
+
+.wrapper {
+    max-width: 1115px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider {
+    margin-top: -133px;
+    background: url(../img/psheno.png) no-repeat;
+    background-size: cover;
+    height: 850px;
+}
+
+#logo {
+    margin-top: 20px;
+    float: left;
+    width: 30%;
+}
+
+.boxSearch {
+    float: right;
+    width: 350px;
+    height: 35px;
+    margin-top: 20px;
+}
+
+.boxSearch input,
+button {
+    display: inline-flexs;
+    border: none;
+    font-family: "Robotoslab";
+    background: transparent;
+}
+
+.lupa {
+    float: right;
+}
+
+.line {
+    width: 350px;
+    height: 1px;
+    border: none;
+    background-color: black;
+    color: black;
+}
+
+.readMore {
+    text-align: center;
+    /* font-family: "Robotoslabbold"; */
+    height: 55px;
+    width: 160px;
+    background-color: #57984c;
+    font-size: 16px;
+    margin-top: 60px;
+    color: #ffffff;
+}
+
+.menu {
+    text-align: right;
+    padding-top: 91px;
+}
+
+.complex_list {
+    padding: 4px;
+}
+
+.complex_list li {
+    display: inline-block;
+    list-style: none;
+}
+
+.complex_list li a {
+    color: black;
+    font: optional;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 2px;
+}
+
+.complex_list li a:hover {
+    text-decoration: underline;
+}
