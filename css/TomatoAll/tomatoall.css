@@ -1,6 +1,6 @@
 .tomatimg {
     padding-top: -122px;
-    background: url("/img/TomatoAllIMG/fonTomato.png") no-repeat;
+    background: url("../../img/TomatoAllIMG/fonTomato.png") no-repeat;
     background-size: cover;
     height: 480px;
 }
