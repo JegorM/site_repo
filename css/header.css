@@ -12,12 +12,15 @@ header {
     justify-content: space-between;
 }
 
+.logo_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 .wrapper {
     max-width: 1115px;
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
 }
 
 .slider {
