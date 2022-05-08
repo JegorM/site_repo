@@ -1,0 +1,90 @@
+.tomatimg {
+    padding-top: -122px;
+    background: url("/img/TomatoAllIMG/fonTomato.png") no-repeat;
+    background-size: cover;
+    height: 480px;
+}
+
+.title_text {
+    margin-top: 51px;
+    font-size: 44px;
+    color: #324950;
+}
+
+.title_img {
+    margin-top: 40px;
+}
+
+.main_text {
+    margin-top: 40px;
+    font-size: 17px;
+    color: #324950;
+}
+
+.line2 {
+    border-left: 4px solid #eb5757;
+    padding-left: 26px;
+}
+
+.activ {
+    height: 450px;
+    width: 1152px;
+    background-color: white;
+    margin: 33px auto 0 auto;
+}
+
+.activ {
+    font-size: 64px;
+    color: #324950;
+    padding-top: 50px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.colum {
+    flex: 0 0 33%;
+    font-size: 24px;
+    color: #324950;
+}
+
+.colum .exam {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #324950;
+}
+
+.line3 {
+    border-left: 4px solid #eb5757;
+    padding-left: 26px;
+    font-weight: 700;
+    margin-top: 47px;
+    margin-bottom: 47px;
+}
+
+.prodTomat {
+    display: grid;
+    object-fit: contain;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(3, 321px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    object-fit: contain;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.prodTomat div {
+    text-align: center;
+    background-color: white;
+}
+
+.prodTomat p {
+    color: green;
+    height: 50px;
+    z-index: 1;
+}
+
+.prodTomat img {
+    z-index: 1;
+}

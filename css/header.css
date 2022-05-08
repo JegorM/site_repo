@@ -1,0 +1,87 @@
+header {
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+    height: 133px;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.wrapper {
+    max-width: 1115px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider {
+    margin-top: -133px;
+    background: url(../img/psheno.png) no-repeat;
+    background-size: cover;
+    height: 850px;
+}
+
+#logo {
+    float: left;
+    width: 30%;
+}
+
+.search {
+    width: 350px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-input {
+    width: 100%;
+}
+
+.search-input,
+.search-button {
+    display: inline-flex;
+    border: none;
+    font-family: "Robotoslab";
+    background: transparent;
+}
+
+.readMore {
+    text-align: center;
+    height: 55px;
+    width: 160px;
+    background-color: #57984c;
+    font-size: 16px;
+    margin-top: 60px;
+    color: #ffffff;
+}
+
+.menu {
+    text-align: right;
+}
+
+.complex_list {
+    padding: 4px;
+}
+
+.complex_list li {
+    display: inline-block;
+    list-style: none;
+}
+
+.complex_list li a {
+    color: black;
+    font: optional;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 2px;
+}
+
+.complex_list li a:hover {
+    text-decoration: underline;
+}
