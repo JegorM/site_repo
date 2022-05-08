@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @font-face {
     font-family: "Roboto";
     src: url("../fonts/Roboto-Regular.svg#Roboto-Regular") format("svg"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
@@ -11,18 +10,4 @@
     src: url("../fonts/Robotoslabbold.svg#Robotoslabbold") format("svg"), url("../fonts/Robotoslabbold.ttf") format("truetype"), url("../fonts/Robotoslabbold.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-=======
-@font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto-Regular.svg#Roboto-Regular") format("svg"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Robotoslabbold";
-    src: url("../fonts/Robotoslabbold.svg#Robotoslabbold") format("svg"), url("../fonts/Robotoslabbold.ttf") format("truetype"), url("../fonts/Robotoslabbold.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
->>>>>>> a60b67df66a678e02ef0e932b07a0db12d6a6f85
 }
