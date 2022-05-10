@@ -1,0 +1,113 @@
+.contentSait {
+    height: 1216px;
+    background-color: #e5e5e5;
+    box-shadow: inset 2px 4px 5px rgba(154, 147, 140, 0.5);
+    background: url(../../img/TomatoOne/TomatoOneBackground.png) #e5e5e5 no-repeat;
+}
+
+.tomatoOneImg {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+}
+
+.downloadPdf {
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    column-gap: 12px;
+    border: 2px solid #57984c;
+    border-radius: 60px;
+    background: transparent;
+    padding: 11px 29px;
+}
+
+.downloadPdf p {
+    font-weight: 700;
+    font-size: 17px;
+    color: #57984c;
+    margin: 0;
+}
+
+.cycleColor {
+    margin: 0;
+    padding-top: 41px;
+}
+
+.cycleColor hr {
+    width: 183px;
+    margin: 0;
+    border-top: 2px solid #57984c;
+    padding-bottom: 24px;
+}
+
+.greenText {
+    margin: 0;
+    padding-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #57984c;
+}
+
+.color {
+    padding-top: 30px;
+}
+
+.list li::before {
+    content: "\2022";
+    color: #57984c;
+    font-weight: 1000;
+    display: inline-block;
+    width: 24px;
+}
+
+.backToPreviousPage {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    color: #57984c;
+    margin: 0;
+}
+
+.backToPreviousPage:visited {
+    color: #57984c;
+}
+
+.backToPreviousPage:hover {
+    color: #57984c;
+    text-decoration: none;
+}
+
+.tomatoDeterminate {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    color: #57984c;
+}
+
+.tomatoDeterminate span {
+    color: #324950;
+    margin: 0;
+}
+
+.krestiki {
+    padding-top: 40px;
+    padding-bottom: 41px;
+}
+
+.krasniTomat {
+    display: flex;
+    align-items: center;
+    column-gap: 23px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    color: #cf2333;
+    padding-bottom: 40px;
+}

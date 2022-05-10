@@ -1,0 +1,52 @@
+.footer_second {
+    background-color: #324950;
+    color: #b9b9b9;
+    font-family: "Roboto";
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.footer_first {
+    background-color: #2d3f45;
+    padding-top: 5px;
+}
+
+.footer_first .row {
+    margin-top: 10px;
+}
+
+.footer__item {
+    margin: 0 13px;
+    margin-top: 5px;
+}
+
+.footer__item a {
+    font-family: "Roboto";
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer__link {
+    margin: 0 13px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.crosses {
+    padding-top: 20px;
+}
+
+.greenText {
+    color: #57984c;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    width: 100%;
+}
