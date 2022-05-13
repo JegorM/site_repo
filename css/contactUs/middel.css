@@ -109,9 +109,6 @@ input.wwodCodFix {
         padding: 0;
         width: 320px;
     }
-    .wrapper {
-        padding: 0 15px;
-    }
     input.wwodCodFix {
         width: 100%;
     }
@@ -121,6 +118,9 @@ input.wwodCodFix {
 }
 
 @media (max-width: 1200px) {
+    .wrapper {
+        padding: 0 15px;
+    }
     .vision {
         --bs-gutter-x: 0;
     }
