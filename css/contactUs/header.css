@@ -1,9 +1,9 @@
 header {
     margin-top: 20px;
+    margin-bottom: 30px;
     padding-bottom: 19px;
     position: relative;
     z-index: 2;
-    height: 133px;
     background-color: white;
 }
 
@@ -29,12 +29,10 @@ header {
     margin-top: -133px;
     background: url(../img/psheno.png) no-repeat;
     background-size: cover;
-    height: 850px;
 }
 
 #logo {
     float: left;
-    width: 30%;
 }
 
 .search {
@@ -54,6 +52,14 @@ header {
     border: none;
     font-family: "Robotoslab";
     background: transparent;
+}
+
+.readMore {
+    text-align: center;
+    background-color: #57984c;
+    font-size: 16px;
+    margin-top: 60px;
+    color: #ffffff;
 }
 
 .menu {
@@ -79,4 +85,70 @@ header {
 
 .complex_list li a:hover {
     text-decoration: underline;
+}
+
+nav {
+    padding: 15px 10px;
+    color: black;
+    font-family: "Segoe UI", sans-serif;
+    text-align: center;
+}
+
+nav>ul {
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    border: 1px solid #fff;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+nav label {
+    display: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    align-content: flex-end;
+}
+
+@media (max-width: 1200px) {
+    .logo_wrapper {
+        justify-content: center;
+    }
+    .search {
+        display: none;
+    }
+    .menu {
+        position: absolute;
+        right: 0;
+        top: 80px;
+    }
+    nav a {
+        padding: 0;
+    }
+    nav label {
+        display: inline-block;
+    }
+    nav>ul {
+        display: none;
+    }
+    input[type="checkbox"]:checked~label+ul {
+        display: flex;
+        flex-direction: column;
+    }
 }

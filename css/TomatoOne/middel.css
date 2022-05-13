@@ -1,5 +1,4 @@
 .contentSait {
-    height: 1216px;
     background-color: #e5e5e5;
     box-shadow: inset 2px 4px 5px rgba(154, 147, 140, 0.5);
     background: url(../../img/TomatoOne/TomatoOneBackground.png) #e5e5e5 no-repeat;
@@ -110,4 +109,17 @@
     font-size: 30px;
     color: #cf2333;
     padding-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+    .contentSait .row {
+        margin: 0;
+        padding: 0;
+    }
+    .tomatoDeterminate {
+        font-size: 30px;
+    }
+    .krasniTomat {
+        font-size: 20px;
+    }
 }

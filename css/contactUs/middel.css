@@ -46,12 +46,11 @@ textarea.textrFix {
 }
 
 input.sizeFix {
-    width: 100%;
+    /* width: 100%; */
     margin: 0;
 }
 
 .form-control {
-    width: 80%;
     border: 1px solid #dadada;
     border-radius: 10px;
     padding: 12px;
@@ -103,4 +102,35 @@ input.wwodCodFix {
     font-size: 20px;
     color: #57984c;
     border-bottom: 2px solid #57984c;
+}
+
+@media (max-width: 320px) {
+    .fix {
+        padding: 0;
+        width: 320px;
+    }
+    .wrapper {
+        padding: 0 15px;
+    }
+    input.wwodCodFix {
+        width: 100%;
+    }
+    .buttonGreen {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .vision {
+        --bs-gutter-x: 0;
+    }
+    .menuFix {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        align-items: stretch;
+    }
+    .secondBody p {
+        text-align: center;
+    }
 }
