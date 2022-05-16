@@ -13,7 +13,12 @@
 }
 
 body {
-    background-color: #fcf0f0;
+    background-color: AntiqueWhite;
+}
+
+.inf_tomat {
+    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.7) inset;
+    padding-top: 51px;
 }
 
 h1,

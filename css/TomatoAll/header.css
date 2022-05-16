@@ -1,15 +1,21 @@
 header {
-    padding: 20px 0;
     position: relative;
     z-index: 2;
-    height: 133px;
 }
 
 .header-wrapper {
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-left: 80px;
+    width: 150px;
+    height: auto;
 }
 
 .logo_wrapper {
@@ -23,24 +29,19 @@ header {
     margin: 0 auto;
 }
 
-.slider {
-    margin-top: -133px;
-    background: url(../img/psheno.png) no-repeat;
-    background-size: cover;
-}
-
 #logo {
     float: left;
 }
 
 .search {
     width: 350px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     display: flex;
     justify-content: space-between;
 }
 
 .search-input {
+    font-weight: bold;
     width: 100%;
 }
 
@@ -52,16 +53,13 @@ header {
     background: transparent;
 }
 
-.readMore {
-    text-align: center;
-    background-color: #57984c;
-    font-size: 16px;
-    margin-top: 60px;
-    color: #ffffff;
+.search-input::placeholder {
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .menu {
     text-align: right;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .complex_list {
@@ -108,8 +106,9 @@ nav a {
     transition: 0.3s;
 }
 
-nav a:hover {
-    border: 1px solid #fff;
+.menu a:hover {
+    border: 2px solid #fff;
+    border-radius: 5px;
 }
 
 input[type="checkbox"] {
@@ -124,9 +123,12 @@ nav label {
     align-content: flex-end;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 860px) {
     .logo_wrapper {
         justify-content: center;
+    }
+    .logo {
+        margin: 0;
     }
     .search {
         display: none;
@@ -140,6 +142,10 @@ nav label {
         padding: 0;
     }
     nav label {
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: antiquewhite;
+        color: white;
         display: inline-block;
     }
     nav>ul {
@@ -148,5 +154,11 @@ nav label {
     input[type="checkbox"]:checked~label+ul {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        opacity: 0;
     }
 }
