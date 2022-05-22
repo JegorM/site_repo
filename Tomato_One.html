@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Common/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/Common/font.css">
+    <link rel="stylesheet" href="./css/Common/header.css">
+    <link rel="stylesheet" href="./css/Tomato One/style.css">
+    <link rel="stylesheet" href="./css/Common/footer.css">
+    <title>Tomato One</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <div class="wrapper logo_wrapper">
+                <div class="logo">
+                    <a href="./Homepage.html">
+                        <img src="./img/Common/Logo/Logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="search-wrapper">
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <button type="submit">
+                        <image class="search-icon" src="./img/Common/Logo/Lupa.png">
+                        </button>
+                    </div>
+                    <nav class="menu">
+                        <input type="checkbox" name="menu" id="=">
+                        <label for="=">Menu</label>
+                        <ul class=" complex_list">
+                            <li>
+                                <a href="./Homepage.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="">Company Profile</a>
+                            </li>
+                            <li>
+                                <a href="./LOL.html">Products</a>
+                            </li>
+                            <li>
+                                <a href="">Servies</a>
+                            </li>
+                            <li>
+                                <a href="./Tomato_One.html">R & D</a>
+                            </li>
+                            <li>
+                                <a href="./Contact_us.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="slider"></div>
+        <section class="contentSait">
+            <div class="wrapper">
+                <div class="row" v-if="champion">
+                    <div class="col">
+                        <a href="./LOL.html" class="backToPreviousPage">
+                            <img src="./img/TomatoOne/Components/Strelka.svg" alt="---"> Return to all champions
+                        </a>
+                        <h1 class="tomatoDeterminate">
+                            <span>{{champion.title}}</span>
+                        </h1>
+                        <div class="krestiki">
+                            <img src="./img/TomatoOne/Components/Krestiki.png" alt="XXXXX">
+                        </div>
+                        {{champion.short_text}}
+                        <div class="krasniTomat">
+                            <img :src="'./img/LOL/SkillCampions/' + champion.skill" :alt="champion.name">
+                        </div>
+                        {{champion.lor}}
+
+                        <!-- <div class="cycleColor">
+                            <p class="greenText ">CHARACTERISTICS</p>
+                            <hr>
+                            <strong>Resistance</strong>
+                            <br> HR: ToMV:0-2; Fol: 1,2; Ve/Vd;
+                            <br> IR: TYLCV
+                            <p class="greenText color">Plant</p>
+                            <hr>
+                            <ul class="list">
+                                <li>Strong vigor that provides good leaf coverage.</li>
+                                <li>Very high productivity with good fruit setting.</li>
+                                <li>Early matured variety.</li>
+                            </ul>
+                            <p class="greenText color">Fruit</p>
+                            <hr>
+                            <ul class="list">
+                                <li>Long shelf life on plant and post harvest.</li>
+                                <li>Nice shiny attractive deep red color.</li>
+                                <li>Average fruit size: 140 – 160 grams.</li>
+                            </ul>
+                        </div> -->
+                    </div>
+                    <div class="col image">
+                        <img :src="'./img/LOL/Champions/' + champion.image" :alt="champion.name" class="tomatoOneImg">
+                        <button class="downloadPdf" @click.prevent="addToCart(champions.id)" v-if="!btnVisible">Add to Cart</button>
+                        <a class="downloadPdf" href="./Contact_us.html" v-if="btnVisible">Go to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_first">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12">
+                            <ul class="footer__menu">
+                                <li class="footer__item">
+                                    <a href="#">PROFILE</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">MANAGEMENT</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">PRODUCTS</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">R&D</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">LINKS</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">SITEMAP</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 d-flex justify-content-around ml-auto">
+                            <li class="footer_link">
+                                <a href="#">
+                                    <img src="./img/Common/fotter/Ico_in.svg" alt="linkedin">
+                                </a>
+                            </li>
+                            <li class="footer_link">
+                                <a href="#">
+                                    <img src="./img/Common/fotter/Ico_inst.svg" alt="instagram">
+                                </a>
+                            </li>
+                            <li class="footer_link">
+                                <a href="#">
+                                    <img src="./img/Common/fotter/Ico_tube.svg" alt="youtube">
+                                </a>
+                            </li>
+                            <li class="footer_link">
+                                <a href="#">
+                                    <img src="./img/Common/fotter/Ico_tw.svg" alt="twitter">
+                                </a>
+                            </li>
+                            <li class="footer_link">
+                                <a href="#">
+                                    <img src="./img/Common/fotter/Ico_fb.svg" alt="facebook">
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_second">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            AGRIDERA SEEDS & AGRICULTURE LTD. © 2020
+                        </div>
+                    </div>
+                </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js "></script>
+        <script src="./js/LOL/main.js "></script>
+        </div>
+</body>
+
+</html>

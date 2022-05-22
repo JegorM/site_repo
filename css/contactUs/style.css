@@ -1,13 +1,149 @@
-@font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto-Regular.svg#Roboto-Regular") format("svg"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+img.fon {
+    min-height: 100%;
+    min-width: 640px;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
 }
 
-@font-face {
-    font-family: "Robotoslabbold";
-    src: url("../fonts/Robotoslabbold.svg#Robotoslabbold") format("svg"), url("../fonts/Robotoslabbold.ttf") format("truetype"), url("../fonts/Robotoslabbold.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+.logo_wrapper {
+    padding-bottom: 20px;
+}
+
+.slider {
+    padding-top: -122px;
+    background: url("/img/Contact_us/fon/background_field.svg") no-repeat;
+    background-size: cover;
+    height: 480px;
+}
+
+.fonGray {
+    padding-top: 51px;
+    background-color: #e5e5e5;
+}
+
+.haderStyle h1 {
+    font-weight: 700;
+    font-size: 44px;
+    color: #324950;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+}
+
+.haderStyle img {
+    padding-bottom: 50px;
+}
+
+.selectFix {
+    display: flex;
+    width: 100%;
+    padding: 12px;
+    background-position: right 20px center;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+}
+
+textarea.textrFix {
+    min-height: 390px;
+    width: 100%;
+}
+
+input.sizeFix {
+    /* width: 100%; */
+    margin: 0;
+}
+
+.form-control {
+    border: 1px solid #dadada;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.bottomBody {
+    background-color: white;
+}
+
+input.wwodCodFix {
+    width: 35%;
+}
+
+.menuFix {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonGreen {
+    text-align: center;
+    color: white;
+    background-color: #57984c;
+    border: none;
+    border-radius: 20px;
+    width: 35%;
+}
+
+.fixPadding {
+    padding-bottom: 50px;
+}
+
+.ourAdress {
+    text-align: center;
+    padding-top: 44px;
+}
+
+.ourAdress a {
+    text-decoration: none;
+    color: #57984c;
+}
+
+.textGreen {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 20px 12px;
+    margin-bottom: 17px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #57984c;
+    border-bottom: 2px solid #57984c;
+}
+
+.vision {
+    padding-bottom: 10px;
+}
+
+@media (max-width: 319px) {
+    .fix {
+        padding: 0;
+        width: 320px;
+    }
+    input.wwodCodFix {
+        width: 100%;
+    }
+    .buttonGreen {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .slider {
+        display: inline-block;
+        margin-top: 0;
+        width: 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    .wrapper {
+        padding: 0 15px;
+    }
+    .vision {
+        --bs-gutter-x: 0;
+    }
+    .menuFix {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+    .secondBody p {
+        text-align: center;
+    }
 }

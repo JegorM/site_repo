@@ -1,0 +1,100 @@
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.complex_list li a {
+    color: white;
+}
+
+.search input::placeholder,
+.search input {
+    color: white;
+}
+
+.slider {
+    margin-top: -246px;
+    background-image: url("/img/LOL/Fon/open-graph-2e582ae9fae8b0b396ca46ff21fd47a8.jpg");
+    background-size: cover;
+    height: 235px;
+}
+
+.title_text {
+    font-size: 44px;
+    color: #324950;
+}
+
+.title_img {
+    margin-top: 40px;
+}
+
+.main_text {
+    margin-top: 40px;
+    font-size: 17px;
+    color: #324950;
+}
+
+.line2 {
+    border-left: 4px solid #eb5757;
+    padding-left: 26px;
+}
+
+.championsList {
+    padding-bottom: 20px;
+}
+
+.champsInfo {
+    font-family: "Roboto";
+    color: black;
+    font-size: 20px;
+    line-height: 28px;
+    padding-bottom: 15px;
+}
+
+.champItem {
+    text-align: center;
+}
+
+.champItem img {
+    max-width: 25vw;
+}
+
+@media (max-width: 780px) {
+    .slider {
+        display: inline-block;
+        margin-top: 0;
+        width: 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    .logo_wrapper {
+        padding-top: 0px;
+    }
+    .logo {
+        display: none;
+    }
+    .title_text {
+        font-size: 30px;
+    }
+    .padingText {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .champItem img {
+        max-width: 40vw;
+    }
+}
+
+
+/* @media (max-width: 450px) {
+    .slider {
+        display: inline-block;
+        margin-top: 0;
+        width: 100%;
+        background-size: 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+} */

@@ -1,0 +1,152 @@
+header {
+    font-family: "Heebo", sans-serif;
+    position: relative;
+    z-index: 2;
+}
+
+.wrapper {
+    max-width: 1115px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo_wrapper {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 225px;
+    height: auto;
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.search {
+    width: 350px;
+    border-bottom: 1px solid #ffebcd;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search input {
+    width: 100%;
+}
+
+.search input,
+.search button {
+    display: inline-flex;
+    border: none;
+    font-family: "Robotoslab";
+    background: transparent;
+}
+
+.menu input,
+.menu label {
+    display: none;
+}
+
+.menu {
+    right: 10px;
+    text-align: right;
+}
+
+.complex_list li {
+    display: inline-block;
+    list-style: none;
+}
+
+.complex_list li a {
+    color: #324950;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 2px;
+}
+
+.complex_list li a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    text-align: center;
+}
+
+nav>ul {
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+nav a {
+    padding-top: 5px;
+    padding-left: 10px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+nav input[type="checkbox"] {
+    display: none;
+}
+
+nav label {
+    display: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    align-content: flex-end;
+}
+
+@media (max-width: 780px) {
+    .menu {
+        position: absolute;
+    }
+    .logo_wrapper {
+        justify-content: center;
+    }
+    .logo {
+        margin: 0;
+    }
+    .search {
+        display: none;
+    }
+    .menu input,
+    .menu label {
+        background: #8fbc8f;
+        display: inline-block;
+    }
+    .complex_list li a {
+        color: #faf1e4;
+    }
+    nav a {
+        padding: 0;
+    }
+    nav label {
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: rgb(250, 235, 215);
+        color: white;
+        display: inline-block;
+    }
+    nav>ul {
+        display: none;
+    }
+    nav input[type="checkbox"]:checked~label+ul {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .menu ul {
+        border-radius: 10px;
+        background-color: rgba(90, 90, 90, 0.784);
+    }
+}

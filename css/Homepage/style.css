@@ -1,0 +1,174 @@
+body {
+    background-color: gainsboro;
+}
+
+.readMore {
+    border: none;
+    text-align: center;
+    background-color: #57984c;
+    padding: 15px 30px;
+    font-size: 16px;
+    margin-top: 60px;
+    color: #ffffff;
+}
+
+.slider {
+    margin-top: -133px;
+    background: url("/img/Homepage/fon/psheno.png") no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.content {
+    position: relative;
+    padding-top: 362px;
+    padding-bottom: 300px;
+    font-size: 48px;
+    margin: 0;
+    text-align: center;
+    color: #735440;
+}
+
+.ravnImg1 {
+    background-color: white;
+    text-align: center;
+    padding: 48px 0px;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ravnImg1 div {
+    font-family: "Roboto";
+}
+
+.mainContentWrapper {
+    background-image: url("/img/Homepage/fon/BG_part_1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.mainContent {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.mainContent:first-child {
+    margin-bottom: 100px;
+}
+
+.mainContent h1 {}
+
+.textContent,
+.imgContent {
+    flex: 1;
+}
+
+.imgContent img {
+    display: flex;
+    width: 100%;
+}
+
+.textContent_txt {
+    width: 80%;
+}
+
+.reversedTextContent {
+    padding-left: 40px;
+}
+
+
+/* ////////////////// */
+
+.activ {
+    margin-top: 0;
+    font-size: 64px;
+    color: #324950;
+    padding-top: 70px;
+    padding-bottom: 90px;
+    text-align: center;
+    font-weight: 700;
+    background-color: #ededed;
+}
+
+.activ_union {
+    margin-top: -45px;
+}
+
+.activ_row {
+    display: flex;
+    justify-content: center;
+}
+
+.activ_column {
+    flex: 0 0 33%;
+    font-size: 24px;
+    color: #57984c;
+}
+
+.activ_column .activ_examples {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #324950;
+}
+
+@media (max-width: 834px) {
+    .activ_row,
+    .ravnImg1 {
+        flex-wrap: wrap;
+    }
+    .activ_row {
+        flex-direction: column;
+    }
+    .vision {
+        width: 40ch;
+        flex-wrap: wrap;
+    }
+    .main_activ {
+        font-size: 32px;
+    }
+    .fixVisMis,
+    .title_vis {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .imgTextRevers img {
+        flex-direction: column-reverse;
+    }
+    .ravnImg1 {
+        display: flex;
+        flex-flow: column;
+    }
+    .mainContent {
+        display: flex;
+        flex-flow: column;
+    }
+    .fixTextVision {
+        flex-flow: column-reverse;
+    }
+    .textContent_txt {
+        text-align: center;
+        width: 100%;
+    }
+    .cotentCenter {
+        text-align: center;
+    }
+    .reversedTextContent {
+        padding: 0;
+    }
+    .textContent {
+        text-align: center;
+    }
+    .imgContent {
+        width: 90%;
+    }
+}
