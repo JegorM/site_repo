@@ -5,7 +5,7 @@
 .contentSait {
     background-color: #e5e5e5;
     box-shadow: inset 2px 4px 5px rgba(154, 147, 140, 0.5);
-    background: url("/img/TomatoOne/fon/TomatoOneBackground.png") #e5e5e5 no-repeat;
+    background: url("../../img/TomatoOne/fon/TomatoOneBackground.png") #e5e5e5 no-repeat;
 }
 
 .tomatoOneImg {

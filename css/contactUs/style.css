@@ -13,7 +13,7 @@ img.fon {
 
 .slider {
     padding-top: -122px;
-    background: url("/img/Contact_us/fon/background_field.svg") no-repeat;
+    background: url("../../img/Contact_us/fon/background_field.svg") no-repeat;
     background-size: cover;
     height: 480px;
 }

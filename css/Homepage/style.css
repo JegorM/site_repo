@@ -14,7 +14,7 @@ body {
 
 .slider {
     margin-top: -133px;
-    background: url("/img/Homepage/fon/psheno.png") no-repeat;
+    background: url("../../img/Homepage/fon/psheno.png") no-repeat;
     background-size: cover;
     height: auto;
 }
