@@ -12,6 +12,16 @@ body {
     color: #ffffff;
 }
 
+.subscribe-for-push {
+    border: none;
+    text-align: center;
+    background-color: #57984c;
+    padding: 15px 30px;
+    font-size: 16px;
+    margin-top: 60px;
+    color: white;
+}
+
 .slider {
     margin-top: -133px;
     background: url("../../img/Homepage/fon/psheno.png") no-repeat;
