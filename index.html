@@ -13,6 +13,15 @@
     <link rel="stylesheet" href="./css/Common/footer.css">
     <link rel="manifest" href="/manifest.webmanifest">
     <title>Homepage</title>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('/sw.js')
+                .then(function() {
+                    console.log('Service worker registered!');
+                });
+        }
+    </script>
 </head>
 
 <body>
@@ -228,7 +237,7 @@
     </footer>
 
 
-
+    <script src="/sw.js"></script>
 </body>
 
 </html>
